@@ -1,4 +1,5 @@
 import { defineConfig, mergeConfig } from "vite";
+import { playwright } from "@vitest/browser-playwright";
 import { configDefaults } from "vitest/config";
 import path from "path";
 import baseConfig from "./vite.config";
@@ -21,7 +22,7 @@ export default defineConfig((configEnv) =>
               include: ["src/**/*.browser.test.tsx"],
               browser: {
                 enabled: true,
-                provider: "playwright",
+                provider: playwright(),
                 instances: [{ browser: "chromium" }],
                 headless: true,
               },

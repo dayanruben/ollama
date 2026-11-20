@@ -150,6 +150,8 @@ console.log(response.message.content);
 - [Modelfile reference](https://docs.ollama.com/modelfile)
 - [Building from source](https://github.com/ollama/ollama/blob/main/docs/development.md)
 
+Release and container publication workflows run only in `ollama/ollama`. Forks can still run build and test workflows.
+
 ## Community Integrations
 
 > Want to add your project? Open a pull request.

@@ -11,6 +11,7 @@ env:
 
 jobs:
   setup-environment:
+    if: github.repository == 'ollama/ollama'
     runs-on: ubuntu-latest
     environment: release
     outputs:

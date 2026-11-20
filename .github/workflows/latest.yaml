@@ -6,6 +6,7 @@ on:
 
 jobs:
   update-latest:
+    if: github.repository == 'ollama/ollama'
     environment: release
     runs-on: linux
     steps:
